@@ -1,6 +1,6 @@
+/* eslint-disable */
 <template>
-  <div class="home container">
-    
+  <div class="home container">    
   </div>
 </template>
 
@@ -11,5 +11,5 @@ export default {
   name: "Home",
   components: {
   },
-  };
+};
 </script>
