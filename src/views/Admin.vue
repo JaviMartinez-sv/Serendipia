@@ -8,7 +8,7 @@
             <div class="sidebar-content">
                 <!-- sidebar-brand  -->
                 <div class="sidebar-item sidebar-brand">
-                    <a href="#">pro sidebar</a>
+                    <a href="#">Serendipia</a>
                     <div id="close-sidebar" @click="closeMenu">
                         <i class="fas fa-times"></i>
                     </div>
@@ -16,7 +16,7 @@
                 <!-- sidebar-header  -->
                 <div class="sidebar-item sidebar-header">
                     <div class="user-pic">
-                        <img class="img-responsive img-rounded" src="img/user.jpg" alt="User picture">
+                        <img class="img-responsive img-rounded" src="/img/user.png" alt="User picture">
                     </div>
                     <div class="user-info">
                         <span class="user-name">Jhon
@@ -46,13 +46,13 @@
                 <div class=" sidebar-item sidebar-menu">
                     <ul>
                         <li class="header-menu">
-                            <span>General</span>
+                            <span>Menu</span>
                         </li>
-                        <li class="sidebar-dropdown">
+
+                        <li>
                             <a href="#">
-                                <i class="fa fa-tachometer-alt"></i>
-                                <span>Dashboard</span>
-                                <span class="badge badge-pill badge-warning">New</span>
+                                <i class="fa fa-chart-line"></i>
+                                <span>Overview</span>
                             </a>
                             <div class="sidebar-submenu">
                                 <ul>
@@ -76,28 +76,28 @@
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa fa-book"></i>
-                                <span>Documentation</span>
-                                <span class="badge badge-pill badge-primary">Beta</span>
+                                <i class="fab fa-amazon"></i>
+                                <span>Products</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa fa-calendar"></i>
-                                <span>Calendar</span>
+                                <i class="fa fa-shopping-cart"></i>
+                                <span>Orders</span>
                             </a>
                         </li>
+
                         <li>
                             <a href="#">
-                                <i class="fa fa-folder"></i>
-                                <span>Examples</span>
+                                <i class="fa fa-power-off"></i>
+                                <span>Logout</span>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <!-- sidebar-menu  -->
             </div>
-
+       
         </nav>
         <!-- sidebar-content  -->
         <main class="page-content">
@@ -106,7 +106,6 @@
                     <div class="form-group col-md-12">
                         <h2>Sidebar template</h2>
                         <p>This is a responsive sidebar template with dropdown menu based on bootstrap 4 framework.</p>
-
                     </div>
                 </div>
             </div>
@@ -114,13 +113,8 @@
         <!-- page-content" -->
     </div>
     <!-- page-wrapper -->
-
-
-
-
   </div>
 </template>
-
 <script>
 // @ is an alias to /src
 import Hero from "@/components/Hero.vue";
