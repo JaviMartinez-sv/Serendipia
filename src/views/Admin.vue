@@ -121,7 +121,7 @@ import Hero from "@/components/Hero.vue";
 export default {
   name: "admin",
   components: {
-    Hero
+    Hero,
   },
   methods:{
       closeMenu(){
