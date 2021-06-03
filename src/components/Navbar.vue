@@ -1,43 +1,37 @@
 <template>
   <div class="hello">
-   <nav class="navbar custom-nav fixed-top navbar-expand-lg navbar-light bg-light">
-     <div class="container">
-        <router-link class="navbar-brand" to="/">Serendipia</router-link>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <router-link to="/" class="nav-link">Home</router-link>
-            </li>
-            <li class="nav-item">
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <router-link class="navbar-brand" to="/">Serendipia</router-link>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <router-link to="/home" class="nav-link active" aria-current="page" href="#">Home</router-link>
+        </li>
+        <li class="nav-item">
               <router-link to="/products" class="nav-link" href="#">Products</router-link>
-            </li>
-
-            <li class="nav-item">
-              <router-link to="/about" class="nav-link" href="#">About</router-link>
-            </li>
-          
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <a class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#login">Get Start</a>
-            <a class="btn btn-outline-info border-0 mx-2 my-2 my-sm-0" data-toggle="modal" data-target="#miniCart">
-              <i class="fas fa-cart-plus"></i>
-            </a>
-          </form>
-        </div>
-
-     </div>
+        </li>
+        <li class="nav-item">
+          <router-link to="/about" class="nav-link" href="#">About</router-link>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success"  data-toggle="modal" data-target="#login">Start</button>
+      </form>
+    </div>
+  </div>
 </nav>
     
   </div>
-
 </template>
 
 <script>
+
+
 export default {
   name: "Navbar",
   props: {

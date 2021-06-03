@@ -1,45 +1,121 @@
 <template>
   <div class="products" id="products">
       <div class="container">
-          <h1 class="text-center p-5">Our Products</h1>
+          <h1 class="text-center p-5">Nuestros Productos</h1>
           <div class="row">
               
               <div class="col-md-4">
                   <div class="card product-item">
-                    <img src="/img/products/product1.jpg" class="card-img-top" alt="...">
+                    <img src="/img/products/1millon.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Surface Book 2</h5>
+                            <h5 class="card-title">1Million</h5>
                             <p class="card-text">
-                                Complete your device with Office 365 and get 1TB cloud storage, Excel, Word, PowerPoint & more. Select your suite during checkout.
+                                Un perfume estrella de Paco Rabanne y desde su lanzamiento en el año 2008, unos de los perfumes de hombre más vendidos. No es por casualidad, frescura, seducción, sensualidad... son algunas de las sensaciones que nos transmite 1 Million de Paco Rabanne, un perfume para hombre cargado de originalidad y muy masculino.
                             </p>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                            <a href="#" class="btn btn-primary">Añadir al carrito</a>
                         </div>
                     </div>
               </div>
 
               <div class="col-md-4">
                   <div class="card product-item">
-                    <img src="/img/products/product2.jpg" class="card-img-top" alt="...">
+                    <img src="/img/products/sauvage.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Surface Laptop 2</h5>
+                            <h5 class="card-title">Dior Sauvage</h5>
                             <p class="card-text">
-                               Style and speed. Go beyond the traditional with new Surface Laptop 2. Featuring improved performance and the full Windows 10 Home experience.
+                               Su aroma fresco y jugoso, está basado en la versión del Eau de Toilette pero explorando nuevas facetas. La esencia clásica, suculenta y sugerente, suma facetas sensuales y misteriosas, renovando la firma con una composición virtuosa.  François Demachy, Perfumista-Creador Dior, se inspiró en el desierto y le salio este perfecto perfume.
                             </p>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                            <a href="#" class="btn btn-primary">Añadir al carrito</a>
                         </div>
                     </div>
               </div>
 
               <div class="col-md-4">
                   <div class="card product-item">
-                    <img src="/img/products/product3.jpg" class="card-img-top" alt="...">
+                    <img src="/img/products/invictus.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Surface Studio 2</h5>
+                            <h5 class="card-title">Good Girl</h5>
                             <p class="card-text">
-                                    The ultimate creative studio. Let your ideas flow with brilliant color, blazing graphics, faster processors, intuitive tools, and a stunning, adjustable 28” display.
-
+                                Es el elegante y sofisticado Eau de Parfum de Carolina Herrera. Una fragancia femenina que deslumbra nada mas verla, el frasco de diseño exclusivo es un impresionante Stiletto negro con un tacón de aguja infinito y de color dorado. Además la caja que contiene el frasco viene recubierta de terciopelo negro con los bordes dorados.
                             </p>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                        </div>
+                    </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card product-item">
+                    <img src="/img/products/1millon.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">1Million</h5>
+                            <p class="card-text">
+                                Un perfume estrella de Paco Rabanne y desde su lanzamiento en el año 2008, unos de los perfumes de hombre más vendidos. No es por casualidad, frescura, seducción, sensualidad... son algunas de las sensaciones que nos transmite 1 Million de Paco Rabanne, un perfume para hombre cargado de originalidad y muy masculino.
+                            </p>
+                            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                        </div>
+                    </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="card product-item">
+                    <img src="/img/products/sauvage.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dior Sauvage</h5>
+                            <p class="card-text">
+                               Su aroma fresco y jugoso, está basado en la versión del Eau de Toilette pero explorando nuevas facetas. La esencia clásica, suculenta y sugerente, suma facetas sensuales y misteriosas, renovando la firma con una composición virtuosa.  François Demachy, Perfumista-Creador Dior, se inspiró en el desierto y le salio este perfecto perfume.
+                            </p>
+                            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                        </div>
+                    </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="card product-item">
+                    <img src="/img/products/invictus.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Good Girl</h5>
+                            <p class="card-text">
+                                Es el elegante y sofisticado Eau de Parfum de Carolina Herrera. Una fragancia femenina que deslumbra nada mas verla, el frasco de diseño exclusivo es un impresionante Stiletto negro con un tacón de aguja infinito y de color dorado. Además la caja que contiene el frasco viene recubierta de terciopelo negro con los bordes dorados.
+                            </p>
+                            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                        </div>
+                    </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="card product-item">
+                    <img src="/img/products/1millon.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">1Million</h5>
+                            <p class="card-text">
+                                Un perfume estrella de Paco Rabanne y desde su lanzamiento en el año 2008, unos de los perfumes de hombre más vendidos. No es por casualidad, frescura, seducción, sensualidad... son algunas de las sensaciones que nos transmite 1 Million de Paco Rabanne, un perfume para hombre cargado de originalidad y muy masculino.
+                            </p>
+                            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                        </div>
+                    </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="card product-item">
+                    <img src="/img/products/sauvage.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dior Sauvage</h5>
+                            <p class="card-text">
+                               Su aroma fresco y jugoso, está basado en la versión del Eau de Toilette pero explorando nuevas facetas. La esencia clásica, suculenta y sugerente, suma facetas sensuales y misteriosas, renovando la firma con una composición virtuosa.  François Demachy, Perfumista-Creador Dior, se inspiró en el desierto y le salio este perfecto perfume.
+                            </p>
+                            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                        </div>
+                    </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="card product-item">
+                    <img src="/img/products/invictus.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Good Girl</h5>
+                            <p class="card-text">
+                                Es el elegante y sofisticado Eau de Parfum de Carolina Herrera. Una fragancia femenina que deslumbra nada mas verla, el frasco de diseño exclusivo es un impresionante Stiletto negro con un tacón de aguja infinito y de color dorado. Además la caja que contiene el frasco viene recubierta de terciopelo negro con los bordes dorados.
+                            </p>
+                            <a href="#" class="btn btn-primary">Añadir al carrito</a>
                         </div>
                     </div>
               </div>

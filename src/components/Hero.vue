@@ -18,7 +18,7 @@
             </div>
             <div class="col-md-7">
                 <div class="graphic">
-                    <img src="/img/svg/logo.svg"  margin-left= "5em" width = "60%">
+                    <img src="/img/svg/frasco2.svg"  margin-left= "5em" width = "60%">
                 </div>
             </div>
           </div>

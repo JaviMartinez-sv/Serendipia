@@ -7,7 +7,7 @@
       <div class="container h-100">
         <div class="row p-5 h-100 justify-content-center align-items-center">
           <div class="col-md-6">
-            <img src="/img/svg/product.svg" alt="" width="400">
+            <img src="/img/svg/frasco.svg" alt="" width="400">
           </div>
           <div class="col-md-6">
             <h3>Learn More About us</h3>

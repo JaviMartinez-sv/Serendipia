@@ -19,8 +19,8 @@
                         <img class="img-responsive img-rounded" src="/img/user.png" alt="User picture">
                     </div>
                     <div class="user-info">
-                        <span class="user-name">Jhon
-                            <strong>Smith</strong>
+                        <span class="user-name">Javier
+                            <strong>Martinez</strong>
                         </span>
                         <span class="user-role">Administrator</span>
                         <span class="user-status">
@@ -54,11 +54,7 @@
                                 <i class="fa fa-chart-line"></i>
                                 <span>Overview</span>
                             </router-link>
-                        </li>
-
-                        <li class="header-menu">
-                            <span>Extra</span>
-                        </li>
+                        </li> 
                         <li>
                             <router-link to="/admin/products">
                                 <i class="fab fa-amazon"></i>
