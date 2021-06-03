@@ -10,7 +10,7 @@
                  </p>
               </div>
               <div class="col-md-6">
-                  <img src="/img/svg/overview.svg" alt="" class="img-fluid">
+                  <img src="/img/svg/logo.svg" alt="" class="img-fluid">
               </div>
             </div>
           </div>
