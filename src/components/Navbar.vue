@@ -15,7 +15,10 @@
               <router-link to="/products" class="nav-link" href="#">Products</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/about" class="nav-link" href="#">About</router-link>
+          <router-link to="/login" class="nav-link" href="#">Login</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/signup" class="nav-link" href="#">Sign Up</router-link>
         </li>
       </ul>
       <form class="d-flex">
@@ -24,21 +27,19 @@
       </form>
     </div>
   </div>
-  <Login></Login>
 </nav>
     
   </div>
 </template>
 
 <script>
-import Login from './Login.vue';
 
 export default {
   name: "Navbar",
   props: {
     msg: String
   },
-  components:{Login}
+  components:{}
 };
 </script>
 
