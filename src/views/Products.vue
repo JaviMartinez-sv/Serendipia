@@ -32,6 +32,27 @@
             <div class="form-group">
               <button @click="saveData" class="btn btn-primary">Save Data</button>
             </div>  
+          <hr>
+
+          <h3>Products list</h3>
+          
+          <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                <tr v-for-key="product in products">
+                <td> {{product.name}} </td>
+                <td> {{product.price}} </td>
+                </tr> 
+
+          </tbody>
+          </table>
+        
          </div>
       </div>
   </div>
@@ -47,6 +68,7 @@ export default {
   },
   data(){
     return{
+      products:[],
       product:{
       name:null,
       price:null    
@@ -55,12 +77,23 @@ export default {
     }
   },
   methods:{
+    readData(){
+      db.collection('products').get().then((querySnapshot) =>{
+
+        querySnapshot.forEach((doc) => {
+
+           this.products.push(doc.data());
+        });
+      });
+
+
+    },
     saveData(){
 
     db.collection("products").add(this.product)
     .then((docRef) => {
     console.log("Document written with ID: ", docRef.id);
-    this.reset();
+    this.readData();
     })
     .catch(function(error) {
     console.error("Error adding document: ", error);
@@ -68,9 +101,22 @@ export default {
     },
 
     reset(){
-      Object.assign(this.$data, this.$option.data.apply(this));
+    //  Object.assign(this.$data, this.$option.data.apply(this));
     }
-  }
+    },
+    created(){
+
+    this.readData();
+      /*
+      db.collection('products').get().then((querySnapshot) =>{
+       // this.products = querySnapshot;
+      querySnapshot.forEach((doc) => {
+
+        this.products.push(doc.data());
+      });
+    });
+     */
+    }
 };
 </script>
 
