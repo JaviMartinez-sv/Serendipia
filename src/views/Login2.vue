@@ -10,10 +10,13 @@
 </template>
 <script>
 
-import {fb} from 'firebase';
+import {fb} from '../firebase'
 
 export default {
   name: "login",
+  props:{
+    msg: String
+  },
   data() {
     return{
           email:null,

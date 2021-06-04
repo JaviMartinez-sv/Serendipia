@@ -69,7 +69,7 @@
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="#" @click="logout()">
                                 <i class="fa fa-power-off"></i>
                                 <span>Logout</span>
                             </a>
@@ -90,6 +90,8 @@
   </div>
 </template>
 <script>
+
+import {fb} from '../firebase';
 import $ from "jquery";
 
 // @ is an alias to /src
@@ -100,7 +102,21 @@ export default {
   methods:{
       closeMenu(){
         $(".page-wrapper").toggleClass("toggled");
+      },
+      logout(){
+          fb.auth().signOut()
+          .then(() => {
+              this.$router.replace('/');
+          })
+          .catch((err) =>{
+              console.log(err);
+          });
       }
+    },
+        created(){
+      let user = fb.auth().currentUser;
+      this.email = user.email;
+
   }
 };
 </script>
