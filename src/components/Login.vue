@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <!-- Modal -->
-    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginTitle" aria-hidden="true">
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -11,25 +11,24 @@
             </button>
           </div>
           <div class="modal-body">
-      
+      hihi
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <a type="button" class="btn btn-primary">Save changes</a>
+            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
-
 <script>
 
 export default {
   name: "Login",
   props: {
     msg: String
-  }
+  },
 };
 </script>
 
