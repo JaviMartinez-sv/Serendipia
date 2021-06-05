@@ -7,6 +7,7 @@ import Products from "../views/Products.vue";
 import Orders from "../views/Orders.vue";
 import Login2 from "../views/Login2.vue";
 import SignUp from "../views/Signup.vue";
+import Profile from "../views/Profile.vue";
 import {fb} from "../firebase";
 
 Vue.use(Router); // VueRouter
@@ -32,6 +33,11 @@ Vue.use(Router); // VueRouter
         path: "overview",
         name: "overview",
         component: Overview
+      },
+      {
+        path: "profile",
+        name: "profile",
+        component: Profile
       },
       {
         path: "products",
