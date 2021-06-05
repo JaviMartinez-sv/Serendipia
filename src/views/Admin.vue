@@ -99,11 +99,19 @@
 
 import {fb} from '../firebase';
 import $ from "jquery";
+import Hero from "@/components/Hero.vue";
 
 // @ is an alias to /src
 export default {
   name: "admin",
+   data(){
+      return{
+          name:null,
+          email:null,
+      }
+  },
   components: {
+      Hero
   },
   methods:{
       closeMenu(){

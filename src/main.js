@@ -4,7 +4,7 @@ import router from "./router";
 
 import jQuery from "jquery";
 import {fb} from "./firebase";
-import VueFirestore from "vue-firestore"
+import VueFirestore from "vue-firestore";
 
 
 require('firebase/firestore')
@@ -41,7 +41,7 @@ const Toast = Swal.mixin({
 window.Toast = Toast;
 
 
-import store from 'store';
+import store from 'store.js';
 
 
 Vue.component("Navbar", require("./components/Navbar.vue").default);
@@ -62,6 +62,7 @@ fb.auth().onAuthStateChanged(function(user) {
   if(!app){
     new Vue({
       router,
+      store,
       render: h => h(App)
     }).$mount("#app");
     
