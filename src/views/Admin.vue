@@ -8,7 +8,7 @@
             <div class="sidebar-content">
                 <!-- sidebar-brand  -->
                 <div class="sidebar-item sidebar-brand">
-                    <a href="#">Serendipia</a>
+                    <a href="/">Serendipia</a>
                     <div id="close-sidebar" @click="closeMenu">
                         <i class="fas fa-times"></i>
                     </div>
@@ -99,7 +99,6 @@
 
 import {fb} from '../firebase';
 import $ from "jquery";
-import Hero from "@/components/Hero.vue";
 
 // @ is an alias to /src
 export default {
@@ -109,9 +108,6 @@ export default {
           name:null,
           email:null,
       }
-  },
-  components: {
-      Hero
   },
   methods:{
       closeMenu(){

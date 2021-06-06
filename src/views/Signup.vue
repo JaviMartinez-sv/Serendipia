@@ -1,14 +1,17 @@
 <template>
+ <div>
+  <navbar></navbar>
 
   <div class="signup">
-    <h3>Let's create a new account !</h3>
-    <input type="text" v-model="name" placeholder="Your name"><br>
-    <input type="email" v-model="email" placeholder="Enter Email"><br>
+    <h3><strong>Vamos a crear una nueva cuenta !</strong></h3>
+    <input type="text" v-model="name" placeholder="Tu nombre"><br>
+    <input type="email" v-model="email" placeholder="Introduce tu Email"><br>
     <input type="password" v-model="password" placeholder="Password"><br>
-    <button @click="register">Sign Up</button>
+    <button @click="register">Registrar</button>
     <p></p>
-    <span>or go back to <router-link to="/login">login.</router-link></span>
+    <span>Si ya tienes una haz click en <router-link to="/login">login.</router-link></span>
   </div>
+ </div>
 </template>
 <script>
 

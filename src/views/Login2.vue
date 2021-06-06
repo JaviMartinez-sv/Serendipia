@@ -1,12 +1,14 @@
 <template>
-
+ <div>
+  <navbar></navbar>
   <div class="login">
-    <h3><strong>Sign in</strong></h3>
+    <h3><strong>Inicio</strong></h3>
     <input type="email" v-model="email" placeholder="Email"><br>
     <input type="password" @keyup.enter="login" v-model="password" placeholder="Password"><br>
     <button @click="login">Login</button>
-    <p>You dont have an account ? You can <router-link to="/signup"> create one</router-link></p>
+    <p>No tienes una cuenta aun? <router-link to="/signup"> create una</router-link></p>
   </div>
+ </div>
 </template>
 <script>
 

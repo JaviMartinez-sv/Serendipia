@@ -9,21 +9,23 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <router-link to="/home" class="nav-link" aria-current="page" href="#">Home</router-link>
+          <router-link to="/" class="nav-link" aria-current="page">Home</router-link>
         </li>
         <li class="nav-item">
-              <router-link to="/products" class="nav-link" href="#">Products</router-link>
+              <router-link to="/products" class="nav-link">Products</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/login" class="nav-link" href="#">Login</router-link>
+          <router-link to="/login" class="nav-link" >Login</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/signup" class="nav-link" href="#">Sign Up</router-link>
+          <router-link to="/signup" class="nav-link" >Sign Up</router-link>
         </li>
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <a class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#login">Start</a>  
+        <a class="btn btn-outline-info border-0 mx-2 my-2 my-sm-0" data-toggle="modal" data-target="#miniCart">
+          <i class="fas fa-cart-plus"></i>
+        </a>
       </form>
     </div>
   </div>

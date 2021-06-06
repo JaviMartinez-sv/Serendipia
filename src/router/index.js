@@ -69,6 +69,12 @@ Vue.use(Router); // VueRouter
     path: "/signup",
     name: "SignUp",
     component: SignUp,
+  },
+  {
+    path: "/products",
+    name: "products",
+    component:()=>
+    import (/* webpackChunkName: "about" */ "../sections/Products.vue"),
   }
 ]
 });

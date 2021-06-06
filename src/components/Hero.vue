@@ -8,11 +8,14 @@
                   Serendipia
                 </h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos numquam tempora, iure delectus totam minus quam aperiam ratione dolores magni voluptates ut necessitatibus odio ipsum fuga, voluptas ab praesentium nihil?
+                  ¡Aqui encontraras los mejores perfumes y el mejor aroma! 
+                  No te pierdas nuestra sección de Perfumes Top,
+                  la esencia es lo mejor de uno mismo.
                 </p>
                 <div class="hero-btn mt-5">
-                    <button class="btn custom-btn btn-info mr-4">Explore</button>
-                    <button class="btn custom-btn btn-outline-secondary">Products</button>
+                  <a href="/products" class="btn custom-btn btn-info mr-4" role="button">Explore</a>
+                    
+                    <a href="/products" class="btn custom-btn btn-outline-secondary" role="button">Products</a>
                 </div>
               </div>
             </div>

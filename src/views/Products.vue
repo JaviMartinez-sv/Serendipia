@@ -23,6 +23,7 @@
 
 
             <h3 class="d-inline-block">Products list</h3>
+            <p></p>
             <button @click="addNew" class="btn btn-primary float-right">Add Product</button>
 
             <div class="table-responsive">
@@ -146,6 +147,19 @@ import { VueEditor } from "vue2-editor";
 import { fb, db} from '../firebase';
 import $ from "jquery";
 
+import Swal from 'sweetalert2';
+
+window.Swal = Swal;
+
+const Toast = Swal.mixin({
+  toast: true,
+  position: 'top-end',
+  showConfirmButton: false,
+  timer: 3000
+});
+
+window.Toast = Toast;
+
 export default {
   name: "Products",
   components: {
@@ -187,6 +201,7 @@ export default {
       image.delete().then(function() {
         console.log('image deleted');
       }).catch(function(error) {
+        console.log(error);
         // Uh-oh, an error occurred!
         console.log('an error occurred');
       });
@@ -208,8 +223,9 @@ export default {
           let uploadTask  = storageRef.put(file);
     
           uploadTask.on('state_changed', (snapshot) => {
-            
+            console.log(snapshot);
           }, (error) => {
+            console.log(error);
             // Handle unsuccessful uploads
           }, () => {
             // Handle successful uploads on complete

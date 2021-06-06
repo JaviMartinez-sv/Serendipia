@@ -10,15 +10,15 @@
             <img src="/img/svg/frasco.svg" alt="" width="400">
           </div>
           <div class="col-md-6">
-            <h3>Learn More About us</h3>
+            <h3>Sobre Nosotros</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quaerat voluptate iusto? Nihil voluptas vitae veritatis magnam reprehenderit, reiciendis ex? Libero quasi natus veniam voluptatum, voluptas exercitationem ratione consectetur et!
+              Puedes encontrarnos en cualquier lugar del mundo, Serendipia es mas que una tienda de perfumes, si tienes alguna duda no dudes en contactar con nosotros: serendipia@gmail.com
             </p>
              <button class="btn custom-btn btn-outline-primary mr-4">Browse Products</button>
           </div>
         </div>
       </div>
-      <login></login>
+      <login2></login2>
       <mini-cart></mini-cart>
   </div>
 </template>
@@ -26,13 +26,10 @@
 <script>
 // @ is an alias to /src
 import Hero from "@/components/Hero.vue";
-import Products from "@/sections/Products.vue";
-import Login from '../components/Login.vue';
 export default {
   name: "home",
   components: {
-    Hero,Products,
-    Login
+    Hero
   }
 };
 </script>

@@ -8,7 +8,7 @@
                     <h3>Orders Page</h3>
                     
                  <p>
-                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, ducimus.
+                   
                  </p>
               </div>
               <div class="col-md-6">
@@ -144,6 +144,22 @@
 <script>
 import { VueEditor } from "vue2-editor";
 import { fb, db} from '../firebase';
+import $ from "jquery";
+
+
+import Swal from 'sweetalert2';
+
+window.Swal = Swal;
+
+const Toast = Swal.mixin({
+  toast: true,
+  position: 'top-end',
+  showConfirmButton: false,
+  timer: 3000
+});
+
+window.Toast = Toast;
+
 
 export default {
   name: "Products",
@@ -187,7 +203,7 @@ export default {
         console.log('image deleted');
       }).catch(function(error) {
         // Uh-oh, an error occurred!
-        console.log('an error occurred');
+        console.log(error);
       });
 
     },
@@ -207,8 +223,9 @@ export default {
           let uploadTask  = storageRef.put(file);
     
           uploadTask.on('state_changed', (snapshot) => {
-            
+            console.log(snapshot)
           }, (error) => {
+            console.log(error)
             // Handle unsuccessful uploads
           }, () => {
             // Handle successful uploads on complete
@@ -272,7 +289,6 @@ export default {
         if (result.value) {
 
           this.$firestore.products.doc(doc['.key']).delete()
-
           Toast.fire({
             type: 'success',
             title: 'Deleted  successfully'
@@ -293,7 +309,6 @@ export default {
     addProduct(){
       
       this.$firestore.products.add(this.product);
-      
           Toast.fire({
             type: 'success',
             title: 'Product created successfully'
