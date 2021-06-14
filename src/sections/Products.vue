@@ -1,6 +1,5 @@
 <template>
  <div>
-        <navbar></navbar>
     <div class="products" id="products">
       <div class="container">
           <h1 class="text-center p-5">Nuestros Productos</h1>
@@ -149,9 +148,9 @@
 </template>
 
 <script>
-import Navbar from '../components/Navbar.vue';
+
 export default {
-  components: { Navbar },
+  components: {},
   name: "Products",
   props: {
     msg: String

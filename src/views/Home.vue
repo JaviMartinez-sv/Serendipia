@@ -2,7 +2,7 @@
   <div class="home">
       <Navbar></Navbar>
       <Hero/>
-      <product-list></product-list>
+      <products></products>
 
       <div class="container h-100">
         <div class="row p-5 h-100 justify-content-center align-items-center">
@@ -26,10 +26,11 @@
 <script>
 // @ is an alias to /src
 import Hero from "@/components/Hero.vue";
+import Products from "@/sections/Products.vue";
 export default {
   name: "home",
   components: {
-    Hero
+    Hero, Products
   }
 };
 </script>
